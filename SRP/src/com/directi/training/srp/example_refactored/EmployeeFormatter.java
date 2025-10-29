@@ -1,5 +1,6 @@
 package com.directi.training.srp.example_refactored;
 
+// Responsible for formatting Employee details
 public class EmployeeFormatter
 {
     private final Employee _employee;
