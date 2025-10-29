@@ -10,8 +10,11 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.Base64;
 
+import com.directi.training.dip.exercice_refactored.MyDatabase;
+
 public class EncodingModule
 {
+    // Encodes the content of a file and writes it to another file
     public void encodeWithFiles() throws IOException
     {
         BufferedReader reader = null;
@@ -36,6 +39,7 @@ public class EncodingModule
         }
     }
 
+    // Fetches content from a URL, encodes it, and writes it to a database
     public void encodeBasedOnNetworkAndDatabase() throws IOException
     {
         URL url;

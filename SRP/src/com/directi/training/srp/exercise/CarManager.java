@@ -5,11 +5,11 @@ import java.util.List;
 
 public class CarManager
 {
-    private List<Car> _carsDb = Arrays
+    private List<Car> _carsDb = Arrays // handles storage and retrieval
         .asList(new Car("1", "Golf III", "Volkswagen"), new Car("2", "Multipla", "Fiat"),
             new Car("3", "Megane", "Renault"));
 
-    public Car getFromDb(final String carId)
+    public Car getFromDb(final String carId) // handles storage and retrieval
     {
         for (Car car : _carsDb) {
             if (car.getId().equals(carId)) {
@@ -19,7 +19,7 @@ public class CarManager
         return null;
     }
 
-    public String getCarsNames()
+    public String getCarsNames() // handles formatting
     {
         StringBuilder sb = new StringBuilder();
         for (Car car : _carsDb) {
@@ -31,7 +31,7 @@ public class CarManager
         return sb.substring(0, sb.length() - 2);
     }
 
-    public Car getBestCar()
+    public Car getBestCar() // handles business logic
     {
         Car bestCar = null;
         for (Car car : _carsDb) {
